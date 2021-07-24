@@ -103,6 +103,10 @@ body {
     color: var(--grayBlue);
 }
 
+.jea, .kira {
+    background-color: white;
+}
+
 .profile {
     display: flex;
     flex-wrap: wrap;
