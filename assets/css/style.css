@@ -1,0 +1,166 @@
+/* DEFAULT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condense', sans-serif;
+    font-size: 62.5%;
+}
+
+/* COLOR PALLETE */
+:root {
+    --mainViolet : hsl(263, 55%, 52%);
+    --grayBlue: hsl(217, 19%, 35%);
+    --darkBlue: hsl(219, 29%, 14%);
+    --lightGray: hsl(0, 0%, 81%);
+    --lightGrayBlue: hsl(210, 46%, 95%);
+}
+
+ 
+/* GRID CONFIG */
+.container {
+    background-color: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-areas: "dan" "jon" "jea" "pat" "kira";
+    grid-gap: 32px;
+    max-width: 300px;
+    margin: 24px auto;
+}
+
+/* CARD PATTERN DESIGN */
+.card {
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 50px var(--lightGray);
+    text-align: left;
+    color: var(--lightGrayBlue);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card img.quota {
+    opacity: .5;
+    position: absolute;
+    top: 24px;
+    left: 58%;
+}
+
+.card h2 {
+    opacity: 70%;
+}
+
+.card p {
+    margin: 8px 16px;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.card .review-w, .card .review-d {
+    opacity: 70%;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.card .pic img {
+    border-radius: 400px;
+    width: 40px;
+}
+
+
+.dan {
+    grid-area: dan;
+    background-color: var(--mainViolet);
+}
+
+.jon {
+    grid-area: jon;
+    background-color: var(--grayBlue);
+}
+
+.jea {
+    grid-area: jea;
+}
+
+.pat {
+    grid-area: pat;
+    background-color: var(--darkBlue);
+}
+
+.kira {
+    grid-area: kira;
+}
+
+.jea p, .jea h1, .jea h2, .kira p, .kira h1, .kira h2 {
+    color: var(--grayBlue);
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 48px;
+    align-content: center;
+    margin: 0 16px;
+}
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h1, h2 {
+    padding: 0 16px;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.attribution a {
+    color: #202020;
+    text-decoration: none;
+    font-size: 1.2rem;
+} 
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width:1400px){
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 304px 304px;
+        grid-template-areas: "dan dan jon kira" "jea pat pat kira";
+        grid-gap: 32px;
+        min-width: 1248px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dan {
+        margin: 0;
+    }
+
+    .card img.quota {
+        top: 0;
+        margin-left: -26%;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width: 1380px) {
+    .card img.quota {
+        display: none;    
+    }
+}
