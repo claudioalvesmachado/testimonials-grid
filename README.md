@@ -13,7 +13,7 @@ The challenge is to build a testimonial grid section and make it look as close t
 ### Screenshot
 
 <img src="desktop-design.png">
-<img src="mobile-design.jpg">
+<img src="mobile-design.jpg" style="max-width: 450px">
 
 ### Links
 
