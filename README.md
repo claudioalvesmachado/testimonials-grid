@@ -17,7 +17,8 @@ The challenge is to build a testimonial grid section and make it look as close t
 
 ### Links
 
- - Solution URL: https://github.com/claudioalvesmachado/testimonials-grid/
+ - Solution URL: https://www.frontendmentor.io/solutions/bootcamp-testimonials-grid-section-with-css-grid-K4vcXVqLH
+ - Live site URL: https://claudioalvesmachado.github.io/testimonials-grid/
  
 
 ### Build with:
