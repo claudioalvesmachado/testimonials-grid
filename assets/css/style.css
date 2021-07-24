@@ -10,6 +10,10 @@
     font-size: 62.5%;
 }
 
+body {
+    background-color: var(--lightGrayBlue);
+}
+
 /* COLOR PALLETE */
 :root {
     --mainViolet : hsl(263, 55%, 52%);
